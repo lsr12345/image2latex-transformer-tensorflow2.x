@@ -59,7 +59,7 @@ def evaluate(inp_img, max_length=160):
     return tf.squeeze(decoder_input, axis=0), attention_weights
 
 
-demo_path = './demo.jpg'
+demo_path = './demo.png'
 img = cv2.imread(demo_path)
 img = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
 image, flag = process_resize(img, target_size=IMAGE_SIZE)
