@@ -7,6 +7,13 @@
 *    encoder抽取特征后嵌入2D位置编码
 *    为方便batch训练，将图片进行填充255的pad操作
 *    图片pad之后嵌入2D位置编码并进行一维拉伸后会产生有效位置编码被割裂的问题，通过将图片进行270度旋转解决此问题
+*    数据增强使用模糊、噪声、压缩
+
+## Requirements
+- tensorflow2.x
+- opencv
+- imgaug
+- numpy
 
 ## 训练
 - 下载已经预处理完成的latex100k数据：
