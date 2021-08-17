@@ -1,4 +1,10 @@
+'''
+# Author: Shaoran Lu
+# Date: 2021/08/11
+# Email: lushaoran92@gmail.com
+# Description: 公式识别训练脚本
 
+'''
 # coding: utf-8
 
 # In[1]:
