@@ -1,11 +1,11 @@
 # coding: utf-8
-
-# In[ ]:
-
+'''
 # Author: Shaoran Lu
-# Date: 2021/05/21
+# Date: 2021/08/11
 # Email: lushaoran92@gmail.com
-# Description:
+# Description: 数据pipline
+
+'''
 
 import tensorflow as tf
 from tensorflow.data import Dataset as tfd
