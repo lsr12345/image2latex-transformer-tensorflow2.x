@@ -1,4 +1,10 @@
+'''
+# Author: Shaoran Lu
+# Date: 2021/08/11
+# Email: lushaoran92@gmail.com
+# Description: model文件
 
+'''
 # coding: utf-8
 
 # In[ ]:
