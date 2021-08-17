@@ -1,3 +1,11 @@
+'''
+# Author: Shaoran Lu
+# Date: 2021/08/11
+# Email: lushaoran92@gmail.com
+# Description: demo
+
+'''
+
 import tensorflow as tf
 import cv2
 from model import Image2toLatex_Transformer
