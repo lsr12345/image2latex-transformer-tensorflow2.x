@@ -51,7 +51,7 @@ def evaluate(inp_img, max_length=160):
         decoder_mask = create_masks(decoder_input)
         encoder_decoder_padding_mask = None
 
-        predictions, attention_weights, encoder_input = transformer(encoder_input, decoder_input, decoder_mask,
+        predictions, attention_weights = transformer(encoder_input, decoder_input, decoder_mask,
                                                                     training, encoder_decoder_padding_mask)
 
         predictions = predictions[:, -1, :]
@@ -71,6 +71,8 @@ demo_path = './demo.png'
 img = cv2.imread(demo_path)
 img = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
 image, flag = process_resize(img, target_size=IMAGE_SIZE)
+image = np.rot90(image, 3)
+image = np.expand_dims(image, axis=-1)
 pred, _ = evaluate(image, max_length=160)
 res = ' '.join([id2voc[i] for i in pred.numpy()][1:])
 print(res)
